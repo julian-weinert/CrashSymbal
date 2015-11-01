@@ -69,6 +69,7 @@
 		[[self popOutWindowButton] setHidden:NO];
 	}
 	else {
+		[[self popOutWindowButton] setHidden:YES];
 		[[self closeWindowButton] setTitle:@"Close"];
 	}
 }
