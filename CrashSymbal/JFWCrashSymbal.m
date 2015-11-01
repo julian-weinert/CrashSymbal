@@ -9,9 +9,10 @@
 #import "JFWCrashSymbal.h"
 #import "JFWSymbolicateViewController.h"
 
-@interface JFWCrashSymbal()
+@interface JFWCrashSymbal() <NSUserInterfaceValidations>
 
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
+@property (nonatomic, retain) NSMenuItem *symbolicationMenuItem;
 @property (nonatomic, retain) NSWindowController *symbolicateWindowController;
 
 @end
@@ -40,11 +41,11 @@
     NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Debug"];
 	
     if (menuItem) {
-		NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"Symbolicate Crashlog..." action:@selector(openSymbolicationPanel:) keyEquivalent:@""];
-		[actionMenuItem setTarget:self];
+		[self setSymbolicationMenuItem:[[NSMenuItem alloc] initWithTitle:@"Symbolicate Crashlog..." action:@selector(openSymbolicationPanel:) keyEquivalent:@""]];
+		[[self symbolicationMenuItem] setTarget:self];
 		
 		[[menuItem submenu] addItem:[NSMenuItem separatorItem]];
-		[[menuItem submenu] addItem:actionMenuItem];
+		[[menuItem submenu] addItem:[self symbolicationMenuItem]];
     }
 }
 
@@ -52,13 +53,32 @@
 	[self setSymbolicateWindowController:[[NSStoryboard storyboardWithName:@"JFWSymbolicate" bundle:[self bundle]] instantiateInitialController]];
 	[(JFWSymbolicateViewController *)[[self symbolicateWindowController] contentViewController] setWindowController:[self symbolicateWindowController]];
 	
-	[[NSApp mainWindow] beginSheet:[[self symbolicateWindowController] window] completionHandler:^(NSModalResponse returnCode) {
-		[self setSymbolicateWindowController:nil];
-	}];
+	if ([NSApp mainWindow]) {
+		[[NSApp mainWindow] beginSheet:[[self symbolicateWindowController] window] completionHandler:^(NSModalResponse returnCode) {
+			if (returnCode == NSModalResponseContinue) {
+				[[self symbolicateWindowController] performSelector:@selector(showWindow:) withObject:sender afterDelay:0.0];
+			}
+			else {
+				[self setSymbolicateWindowController:nil];
+			}
+		}];
+	}
+	else {
+		[[self symbolicateWindowController] showWindow:sender];
+	}
 }
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (BOOL)validateUserInterfaceItem:(id<NSValidatedUserInterfaceItem>)anItem {
+//	if (anItem == [self symbolicationMenuItem]) {
+//		if (![NSApp mainWindow]) {
+//			return NO;
+//		}
+//	}
+	return YES;
 }
 
 @end

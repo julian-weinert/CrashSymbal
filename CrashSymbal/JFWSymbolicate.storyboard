@@ -10,7 +10,7 @@
             <objects>
                 <customObject id="5M8-7k-dU6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <windowController showSeguePresentationStyle="single" id="g1V-2d-YfJ" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="bix-mc-mbe">
+                    <window key="window" title="CrashSymbal – manual crash symbolication tool" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="documentWindow" frameAutosaveName="" id="bix-mc-mbe">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="245" y="301" width="780" height="439"/>
@@ -21,7 +21,7 @@
                     </connections>
                 </windowController>
             </objects>
-            <point key="canvasLocation" x="482" y="436.5"/>
+            <point key="canvasLocation" x="482" y="393.5"/>
         </scene>
         <!--Symbolicate View Controller-->
         <scene sceneID="hxH-RZ-gqH">
@@ -67,6 +67,10 @@
                                     <animations/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="cEt-r4-9Vv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="mHr-ae-BuT"/>
+                                </constraints>
                                 <animations/>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="Lml-Ym-UJ1">
                                     <rect key="frame" x="-100" y="-100" width="87" height="18"/>
@@ -79,13 +83,13 @@
                                     <animations/>
                                 </scroller>
                             </scrollView>
-                            <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7uS-3O-pcB">
+                            <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="7uS-3O-pcB">
                                 <rect key="frame" x="20" y="397" width="503" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="BPG-uS-UN7"/>
                                 </constraints>
                                 <animations/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Select crashlog or type path here..." drawsBackground="YES" id="Hj7-id-f7V">
+                                <textFieldCell key="cell" lineBreakMode="truncatingMiddle" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Select crashlog" drawsBackground="YES" id="Hj7-id-f7V">
                                     <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -127,6 +131,17 @@ Gw
                                     <action selector="symbolicate:" target="NtH-Yb-PQh" id="mRU-ud-wk7"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oya-BX-igs">
+                                <rect key="frame" x="14" y="13" width="87" height="32"/>
+                                <animations/>
+                                <buttonCell key="cell" type="push" title="Pop out" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uae-JT-XFz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="popOutButWindow:" target="NtH-Yb-PQh" id="UtC-Q7-mCn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="whX-jC-IXD" firstAttribute="leading" secondItem="Lg7-Cw-YNi" secondAttribute="leading" constant="20" id="3wl-np-Uvh"/>
@@ -135,7 +150,9 @@ Gw
                             <constraint firstItem="q45-XT-hYg" firstAttribute="top" secondItem="7uS-3O-pcB" secondAttribute="bottom" constant="8" id="6LG-Rp-7E5"/>
                             <constraint firstItem="tuh-oK-oio" firstAttribute="top" secondItem="Lg7-Cw-YNi" secondAttribute="top" constant="20" id="K4l-5b-DRd"/>
                             <constraint firstItem="wVQ-oY-liN" firstAttribute="top" secondItem="whX-jC-IXD" secondAttribute="bottom" constant="20" id="KCS-Wn-Hru"/>
+                            <constraint firstItem="oya-BX-igs" firstAttribute="leading" secondItem="Lg7-Cw-YNi" secondAttribute="leading" constant="20" id="KdO-be-y2A"/>
                             <constraint firstItem="7uS-3O-pcB" firstAttribute="leading" secondItem="Lg7-Cw-YNi" secondAttribute="leading" constant="20" id="M9V-xZ-fva"/>
+                            <constraint firstAttribute="bottom" secondItem="oya-BX-igs" secondAttribute="bottom" constant="20" id="S0w-sp-0V5"/>
                             <constraint firstItem="whX-jC-IXD" firstAttribute="top" secondItem="q45-XT-hYg" secondAttribute="bottom" constant="8" id="WLp-cU-zF2"/>
                             <constraint firstAttribute="bottom" secondItem="2yB-gH-y1W" secondAttribute="bottom" constant="20" id="XHa-z9-Bi1"/>
                             <constraint firstAttribute="trailing" secondItem="wVQ-oY-liN" secondAttribute="trailing" constant="20" id="Ylf-0j-yWa"/>
@@ -151,16 +168,83 @@ Gw
                         <animations/>
                     </view>
                     <connections>
+                        <outlet property="closeWindowButton" destination="wVQ-oY-liN" id="ZnV-Je-tDh"/>
                         <outlet property="exportButton" destination="2yB-gH-y1W" id="Shu-c9-3rF"/>
+                        <outlet property="openAccessoryShowHiddenCheckbox" destination="NWf-HX-utz" id="V47-v3-Nes"/>
+                        <outlet property="openAccessoryView" destination="MUh-5v-e7W" id="Gtr-ck-2B4"/>
+                        <outlet property="openButton" destination="tuh-oK-oio" id="gNY-BI-f1n"/>
                         <outlet property="outputView" destination="8Wt-ap-yKK" id="WzF-fk-noE"/>
                         <outlet property="pathTextField" destination="7uS-3O-pcB" id="T4s-Xa-Qv1"/>
+                        <outlet property="popOutWindowButton" destination="oya-BX-igs" id="fWX-0I-eEe"/>
                         <outlet property="progressBar" destination="q45-XT-hYg" id="8iy-Tc-ypG"/>
+                        <outlet property="saveAccessoryRevealInFinderCheckbox" destination="i1b-AI-i28" id="YmL-6U-JcJ"/>
+                        <outlet property="saveAccessoryShowHiddenCheckbox" destination="Utp-ii-fXT" id="SLF-dN-SaD"/>
+                        <outlet property="saveAccessoryView" destination="p3J-2o-j5R" id="gUX-1G-cUp"/>
                         <outlet property="symbolicateButton" destination="wST-kB-bim" id="3VC-wG-NVQ"/>
                     </connections>
                 </viewController>
                 <customObject id="gyW-0L-YZX" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customView id="MUh-5v-e7W">
+                    <rect key="frame" x="0.0" y="0.0" width="167" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="NWf-HX-utz">
+                            <rect key="frame" x="18" y="18" width="129" height="18"/>
+                            <animations/>
+                            <buttonCell key="cell" type="check" title="Show hidden files" bezelStyle="regularSquare" imagePosition="left" inset="2" id="0jw-SJ-9N6">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="openAcceccoryShowHidden:" target="NtH-Yb-PQh" id="cxi-BA-QDJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="NWf-HX-utz" firstAttribute="top" secondItem="MUh-5v-e7W" secondAttribute="top" constant="20" id="1l9-Nq-E5R"/>
+                        <constraint firstItem="NWf-HX-utz" firstAttribute="leading" secondItem="MUh-5v-e7W" secondAttribute="leading" constant="20" id="2wg-7Z-Gpt"/>
+                        <constraint firstAttribute="bottom" secondItem="NWf-HX-utz" secondAttribute="bottom" constant="20" id="Mqn-Jk-mtQ"/>
+                    </constraints>
+                    <animations/>
+                </customView>
+                <customView id="p3J-2o-j5R">
+                    <rect key="frame" x="0.0" y="0.0" width="165" height="74"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="Utp-ii-fXT">
+                            <rect key="frame" x="18" y="38" width="129" height="18"/>
+                            <animations/>
+                            <buttonCell key="cell" type="check" title="Show hidden files" bezelStyle="regularSquare" imagePosition="left" inset="2" id="nmS-sK-eUG">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="saveAccessoryShowHidden:" target="NtH-Yb-PQh" id="zzW-RT-qq6"/>
+                            </connections>
+                        </button>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="i1b-AI-i28">
+                            <rect key="frame" x="18" y="18" width="116" height="18"/>
+                            <animations/>
+                            <buttonCell key="cell" type="check" title="Reveal in finder" bezelStyle="regularSquare" imagePosition="left" inset="2" id="vcS-Ie-p4a">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="saveAccessoryReveal:" target="NtH-Yb-PQh" id="TBp-vQ-O06"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="i1b-AI-i28" firstAttribute="leading" secondItem="p3J-2o-j5R" secondAttribute="leading" constant="20" id="E2y-O9-pA3"/>
+                        <constraint firstAttribute="bottom" secondItem="i1b-AI-i28" secondAttribute="bottom" constant="20" id="SbU-u1-X7C"/>
+                        <constraint firstItem="i1b-AI-i28" firstAttribute="top" secondItem="Utp-ii-fXT" secondAttribute="bottom" constant="6" id="WCL-d1-a4c"/>
+                        <constraint firstItem="Utp-ii-fXT" firstAttribute="leading" secondItem="p3J-2o-j5R" secondAttribute="leading" constant="20" id="bZA-pf-Ibn"/>
+                        <constraint firstItem="Utp-ii-fXT" firstAttribute="top" secondItem="p3J-2o-j5R" secondAttribute="top" constant="20" id="gdh-Q1-HHi"/>
+                    </constraints>
+                    <animations/>
+                </customView>
             </objects>
-            <point key="canvasLocation" x="482" y="1024.5"/>
+            <point key="canvasLocation" x="482" y="1022.5"/>
         </scene>
     </scenes>
 </document>
