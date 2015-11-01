@@ -1,6 +1,6 @@
 //
-//  CrashSymbol.h
-//  CrashSymbol
+//  JFWCrashSymbal.h
+//  JFWCrashSymbal
 //
 //  Created by Julian Weinert on 01/11/15.
 //  Copyright © 2015 Julian Weinert Softwareentwicklung. All rights reserved.
@@ -8,14 +8,14 @@
 
 #import <AppKit/AppKit.h>
 
-@class CrashSymbol;
+@class JFWCrashSymbal;
 
-static CrashSymbol *sharedPlugin;
+static JFWCrashSymbal *sharedPlugin;
 
-@interface CrashSymbol : NSObject
+@interface JFWCrashSymbal : NSObject
 
 + (instancetype)sharedPlugin;
 - (id)initWithBundle:(NSBundle *)plugin;
 
-@property (nonatomic, strong, readonly) NSBundle* bundle;
+@property (nonatomic, strong, readonly) NSBundle *bundle;
 @end

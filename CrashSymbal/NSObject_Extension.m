@@ -8,7 +8,7 @@
 
 
 #import "NSObject_Extension.h"
-#import "CrashSymbol.h"
+#import "JFWCrashSymbal.h"
 
 @implementation NSObject (Xcode_Plugin_Template_Extension)
 
@@ -18,7 +18,7 @@
     NSString *currentApplicationName = [[NSBundle mainBundle] infoDictionary][@"CFBundleName"];
     if ([currentApplicationName isEqual:@"Xcode"]) {
         dispatch_once(&onceToken, ^{
-            sharedPlugin = [[CrashSymbol alloc] initWithBundle:plugin];
+            sharedPlugin = [[JFWCrashSymbal alloc] initWithBundle:plugin];
         });
     }
 }

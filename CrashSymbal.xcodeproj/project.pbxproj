@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		CB7D6AA41BE68D3500D727C9 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7D6AA31BE68D3500D727C9 /* AppKit.framework */; };
 		CB7D6AA61BE68D3500D727C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7D6AA51BE68D3500D727C9 /* Foundation.framework */; };
-		CB7D6AAA1BE68D3500D727C9 /* CrashSymbol.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = CB7D6AA91BE68D3500D727C9 /* CrashSymbol.xcscheme */; };
-		CB7D6AAD1BE68D3500D727C9 /* CrashSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7D6AAC1BE68D3500D727C9 /* CrashSymbol.m */; };
+		CB7D6AAD1BE68D3500D727C9 /* JFWCrashSymbal.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7D6AAC1BE68D3500D727C9 /* JFWCrashSymbal.m */; };
 		CB7D6AB01BE68D3500D727C9 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7D6AAF1BE68D3500D727C9 /* NSObject_Extension.m */; };
+		CB7D6ABF1BE68F6500D727C9 /* JFWSymbolicate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7D6ABE1BE68F6500D727C9 /* JFWSymbolicate.storyboard */; };
+		CB7D6AC21BE68FD200D727C9 /* JFWSymbolicateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7D6AC11BE68FD200D727C9 /* JFWSymbolicateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB7D6AA01BE68D3500D727C9 /* CrashSymbol.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashSymbol.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7D6AA01BE68D3500D727C9 /* CrashSymbal.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashSymbal.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7D6AA31BE68D3500D727C9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		CB7D6AA51BE68D3500D727C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		CB7D6AA91BE68D3500D727C9 /* CrashSymbol.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = CrashSymbol.xcscheme; path = CrashSymbol.xcodeproj/xcshareddata/xcschemes/CrashSymbol.xcscheme; sourceTree = SOURCE_ROOT; };
-		CB7D6AAB1BE68D3500D727C9 /* CrashSymbol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashSymbol.h; sourceTree = "<group>"; };
-		CB7D6AAC1BE68D3500D727C9 /* CrashSymbol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashSymbol.m; sourceTree = "<group>"; };
+		CB7D6AAB1BE68D3500D727C9 /* JFWCrashSymbal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFWCrashSymbal.h; sourceTree = "<group>"; };
+		CB7D6AAC1BE68D3500D727C9 /* JFWCrashSymbal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFWCrashSymbal.m; sourceTree = "<group>"; };
 		CB7D6AAE1BE68D3500D727C9 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
 		CB7D6AAF1BE68D3500D727C9 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
 		CB7D6AB11BE68D3500D727C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB7D6ABE1BE68F6500D727C9 /* JFWSymbolicate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JFWSymbolicate.storyboard; sourceTree = "<group>"; };
+		CB7D6AC01BE68FD200D727C9 /* JFWSymbolicateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFWSymbolicateViewController.h; sourceTree = "<group>"; };
+		CB7D6AC11BE68FD200D727C9 /* JFWSymbolicateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFWSymbolicateViewController.m; sourceTree = "<group>"; };
+		CBE905A91BE6B42D00A1B4F6 /* DVTInvalidation-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTInvalidation-Protocol.h"; sourceTree = "<group>"; };
+		CBE905AA1BE6B42D00A1B4F6 /* DVTPreferenceSet-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTPreferenceSet-Protocol.h"; sourceTree = "<group>"; };
+		CBE905AB1BE6B42D00A1B4F6 /* DVTFontAndColorTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFontAndColorTheme.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +48,7 @@
 		CB7D6A971BE68D3500D727C9 = {
 			isa = PBXGroup;
 			children = (
-				CB7D6AA71BE68D3500D727C9 /* CrashSymbol */,
+				CB7D6AA71BE68D3500D727C9 /* CrashSymbal */,
 				CB7D6AA21BE68D3500D727C9 /* Frameworks */,
 				CB7D6AA11BE68D3500D727C9 /* Products */,
 			);
@@ -51,7 +57,7 @@
 		CB7D6AA11BE68D3500D727C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB7D6AA01BE68D3500D727C9 /* CrashSymbol.xcplugin */,
+				CB7D6AA01BE68D3500D727C9 /* CrashSymbal.xcplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,23 +71,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB7D6AA71BE68D3500D727C9 /* CrashSymbol */ = {
+		CB7D6AA71BE68D3500D727C9 /* CrashSymbal */ = {
 			isa = PBXGroup;
 			children = (
-				CB7D6AAB1BE68D3500D727C9 /* CrashSymbol.h */,
-				CB7D6AAC1BE68D3500D727C9 /* CrashSymbol.m */,
+				CB7D6AAB1BE68D3500D727C9 /* JFWCrashSymbal.h */,
+				CB7D6AAC1BE68D3500D727C9 /* JFWCrashSymbal.m */,
+				CB7D6AC01BE68FD200D727C9 /* JFWSymbolicateViewController.h */,
+				CB7D6AC11BE68FD200D727C9 /* JFWSymbolicateViewController.m */,
+				CB7D6ABE1BE68F6500D727C9 /* JFWSymbolicate.storyboard */,
 				CB7D6AAE1BE68D3500D727C9 /* NSObject_Extension.h */,
 				CB7D6AAF1BE68D3500D727C9 /* NSObject_Extension.m */,
-				CB7D6AB11BE68D3500D727C9 /* Info.plist */,
+				CBE905AB1BE6B42D00A1B4F6 /* DVTFontAndColorTheme.h */,
+				CBE905A91BE6B42D00A1B4F6 /* DVTInvalidation-Protocol.h */,
+				CBE905AA1BE6B42D00A1B4F6 /* DVTPreferenceSet-Protocol.h */,
 				CB7D6AA81BE68D3500D727C9 /* Supporting Files */,
 			);
-			path = CrashSymbol;
+			path = CrashSymbal;
 			sourceTree = "<group>";
 		};
 		CB7D6AA81BE68D3500D727C9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CB7D6AA91BE68D3500D727C9 /* CrashSymbol.xcscheme */,
+				CB7D6AB11BE68D3500D727C9 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -89,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB7D6A9F1BE68D3500D727C9 /* CrashSymbol */ = {
+		CB7D6A9F1BE68D3500D727C9 /* CrashSymbal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB7D6AB41BE68D3500D727C9 /* Build configuration list for PBXNativeTarget "CrashSymbol" */;
+			buildConfigurationList = CB7D6AB41BE68D3500D727C9 /* Build configuration list for PBXNativeTarget "CrashSymbal" */;
 			buildPhases = (
 				CB7D6A9C1BE68D3500D727C9 /* Sources */,
 				CB7D6A9D1BE68D3500D727C9 /* Resources */,
@@ -101,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = CrashSymbol;
-			productName = CrashSymbol;
-			productReference = CB7D6AA01BE68D3500D727C9 /* CrashSymbol.xcplugin */;
+			name = CrashSymbal;
+			productName = CrashSymbal;
+			productReference = CB7D6AA01BE68D3500D727C9 /* CrashSymbal.xcplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -120,7 +131,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CB7D6A9B1BE68D3500D727C9 /* Build configuration list for PBXProject "CrashSymbol" */;
+			buildConfigurationList = CB7D6A9B1BE68D3500D727C9 /* Build configuration list for PBXProject "CrashSymbal" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -132,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB7D6A9F1BE68D3500D727C9 /* CrashSymbol */,
+				CB7D6A9F1BE68D3500D727C9 /* CrashSymbal */,
 			);
 		};
 /* End PBXProject section */
@@ -142,7 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB7D6AAA1BE68D3500D727C9 /* CrashSymbol.xcscheme in Resources */,
+				CB7D6ABF1BE68F6500D727C9 /* JFWSymbolicate.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB7D6AAD1BE68D3500D727C9 /* CrashSymbol.m in Sources */,
+				CB7D6AAD1BE68D3500D727C9 /* JFWCrashSymbal.m in Sources */,
+				CB7D6AC21BE68FD200D727C9 /* JFWSymbolicateViewController.m in Sources */,
 				CB7D6AB01BE68D3500D727C9 /* NSObject_Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,11 +252,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
-				INFOPLIST_FILE = CrashSymbol/Info.plist;
+				INFOPLIST_FILE = CrashSymbal/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = de.julianweinert.CrashSymbol;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.julianweinert.CrashSymbal;
+				PRODUCT_NAME = CrashSymbal;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
@@ -255,11 +267,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
-				INFOPLIST_FILE = CrashSymbol/Info.plist;
+				INFOPLIST_FILE = CrashSymbal/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = de.julianweinert.CrashSymbol;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.julianweinert.CrashSymbal;
+				PRODUCT_NAME = CrashSymbal;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Release;
@@ -267,7 +279,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB7D6A9B1BE68D3500D727C9 /* Build configuration list for PBXProject "CrashSymbol" */ = {
+		CB7D6A9B1BE68D3500D727C9 /* Build configuration list for PBXProject "CrashSymbal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB7D6AB21BE68D3500D727C9 /* Debug */,
@@ -276,13 +288,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB7D6AB41BE68D3500D727C9 /* Build configuration list for PBXNativeTarget "CrashSymbol" */ = {
+		CB7D6AB41BE68D3500D727C9 /* Build configuration list for PBXNativeTarget "CrashSymbal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB7D6AB51BE68D3500D727C9 /* Debug */,
 				CB7D6AB61BE68D3500D727C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
