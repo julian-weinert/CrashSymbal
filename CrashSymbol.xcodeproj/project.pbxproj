@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB7D6AA41BE68D3500D727C9 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7D6AA31BE68D3500D727C9 /* AppKit.framework */; };
+		CB7D6AA61BE68D3500D727C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7D6AA51BE68D3500D727C9 /* Foundation.framework */; };
+		CB7D6AAA1BE68D3500D727C9 /* CrashSymbol.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = CB7D6AA91BE68D3500D727C9 /* CrashSymbol.xcscheme */; };
+		CB7D6AAD1BE68D3500D727C9 /* CrashSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7D6AAC1BE68D3500D727C9 /* CrashSymbol.m */; };
+		CB7D6AB01BE68D3500D727C9 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7D6AAF1BE68D3500D727C9 /* NSObject_Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB7D6AA01BE68D3500D727C9 /* CrashSymbol.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashSymbol.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7D6AA31BE68D3500D727C9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		CB7D6AA51BE68D3500D727C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		CB7D6AA91BE68D3500D727C9 /* CrashSymbol.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = CrashSymbol.xcscheme; path = CrashSymbol.xcodeproj/xcshareddata/xcschemes/CrashSymbol.xcscheme; sourceTree = SOURCE_ROOT; };
+		CB7D6AAB1BE68D3500D727C9 /* CrashSymbol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashSymbol.h; sourceTree = "<group>"; };
+		CB7D6AAC1BE68D3500D727C9 /* CrashSymbol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashSymbol.m; sourceTree = "<group>"; };
+		CB7D6AAE1BE68D3500D727C9 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		CB7D6AAF1BE68D3500D727C9 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		CB7D6AB11BE68D3500D727C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB7D6A9E1BE68D3500D727C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7D6AA41BE68D3500D727C9 /* AppKit.framework in Frameworks */,
+				CB7D6AA61BE68D3500D727C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB7D6A971BE68D3500D727C9 = {
+			isa = PBXGroup;
+			children = (
+				CB7D6AA71BE68D3500D727C9 /* CrashSymbol */,
+				CB7D6AA21BE68D3500D727C9 /* Frameworks */,
+				CB7D6AA11BE68D3500D727C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB7D6AA11BE68D3500D727C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB7D6AA01BE68D3500D727C9 /* CrashSymbol.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB7D6AA21BE68D3500D727C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB7D6AA31BE68D3500D727C9 /* AppKit.framework */,
+				CB7D6AA51BE68D3500D727C9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB7D6AA71BE68D3500D727C9 /* CrashSymbol */ = {
+			isa = PBXGroup;
+			children = (
+				CB7D6AAB1BE68D3500D727C9 /* CrashSymbol.h */,
+				CB7D6AAC1BE68D3500D727C9 /* CrashSymbol.m */,
+				CB7D6AAE1BE68D3500D727C9 /* NSObject_Extension.h */,
+				CB7D6AAF1BE68D3500D727C9 /* NSObject_Extension.m */,
+				CB7D6AB11BE68D3500D727C9 /* Info.plist */,
+				CB7D6AA81BE68D3500D727C9 /* Supporting Files */,
+			);
+			path = CrashSymbol;
+			sourceTree = "<group>";
+		};
+		CB7D6AA81BE68D3500D727C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB7D6AA91BE68D3500D727C9 /* CrashSymbol.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB7D6A9F1BE68D3500D727C9 /* CrashSymbol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB7D6AB41BE68D3500D727C9 /* Build configuration list for PBXNativeTarget "CrashSymbol" */;
+			buildPhases = (
+				CB7D6A9C1BE68D3500D727C9 /* Sources */,
+				CB7D6A9D1BE68D3500D727C9 /* Resources */,
+				CB7D6A9E1BE68D3500D727C9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrashSymbol;
+			productName = CrashSymbol;
+			productReference = CB7D6AA01BE68D3500D727C9 /* CrashSymbol.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB7D6A981BE68D3500D727C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Julian Weinert Softwareentwicklung";
+				TargetAttributes = {
+					CB7D6A9F1BE68D3500D727C9 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = CB7D6A9B1BE68D3500D727C9 /* Build configuration list for PBXProject "CrashSymbol" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CB7D6A971BE68D3500D727C9;
+			productRefGroup = CB7D6AA11BE68D3500D727C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB7D6A9F1BE68D3500D727C9 /* CrashSymbol */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB7D6A9D1BE68D3500D727C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7D6AAA1BE68D3500D727C9 /* CrashSymbol.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB7D6A9C1BE68D3500D727C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7D6AAD1BE68D3500D727C9 /* CrashSymbol.m in Sources */,
+				CB7D6AB01BE68D3500D727C9 /* NSObject_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CB7D6AB21BE68D3500D727C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		CB7D6AB31BE68D3500D727C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		CB7D6AB51BE68D3500D727C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = CrashSymbol/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = de.julianweinert.CrashSymbol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		CB7D6AB61BE68D3500D727C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = CrashSymbol/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = de.julianweinert.CrashSymbol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB7D6A9B1BE68D3500D727C9 /* Build configuration list for PBXProject "CrashSymbol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7D6AB21BE68D3500D727C9 /* Debug */,
+				CB7D6AB31BE68D3500D727C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB7D6AB41BE68D3500D727C9 /* Build configuration list for PBXNativeTarget "CrashSymbol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7D6AB51BE68D3500D727C9 /* Debug */,
+				CB7D6AB61BE68D3500D727C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB7D6A981BE68D3500D727C9 /* Project object */;
+}
