@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="482" y="393.5"/>
         </scene>
-        <!--Symbolicate View Controller-->
+        <!--Path Drop Delegate-->
         <scene sceneID="hxH-RZ-gqH">
             <objects>
                 <viewController id="NtH-Yb-PQh" customClass="JFWSymbolicateViewController" sceneMemberID="viewController">
@@ -83,7 +83,7 @@
                                     <animations/>
                                 </scroller>
                             </scrollView>
-                            <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="7uS-3O-pcB">
+                            <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="7uS-3O-pcB" customClass="JFWDropPathTextField">
                                 <rect key="frame" x="20" y="397" width="503" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="BPG-uS-UN7"/>
@@ -94,6 +94,9 @@
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <outlet property="pathDropDelegate" destination="NtH-Yb-PQh" id="RUQ-p4-ye8"/>
+                                </connections>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wVQ-oY-liN">
                                 <rect key="frame" x="694" y="13" width="72" height="32"/>

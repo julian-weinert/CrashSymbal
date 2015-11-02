@@ -13,6 +13,7 @@
 		CB7D6AB01BE68D3500D727C9 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7D6AAF1BE68D3500D727C9 /* NSObject_Extension.m */; };
 		CB7D6ABF1BE68F6500D727C9 /* JFWSymbolicate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7D6ABE1BE68F6500D727C9 /* JFWSymbolicate.storyboard */; };
 		CB7D6AC21BE68FD200D727C9 /* JFWSymbolicateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7D6AC11BE68FD200D727C9 /* JFWSymbolicateViewController.m */; };
+		CBB0C5161BE6E2CE00D70563 /* JFWDropPathTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C5151BE6E2CE00D70563 /* JFWDropPathTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		CB7D6ABE1BE68F6500D727C9 /* JFWSymbolicate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JFWSymbolicate.storyboard; sourceTree = "<group>"; };
 		CB7D6AC01BE68FD200D727C9 /* JFWSymbolicateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFWSymbolicateViewController.h; sourceTree = "<group>"; };
 		CB7D6AC11BE68FD200D727C9 /* JFWSymbolicateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFWSymbolicateViewController.m; sourceTree = "<group>"; };
+		CBB0C5141BE6E2CE00D70563 /* JFWDropPathTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFWDropPathTextField.h; sourceTree = "<group>"; };
+		CBB0C5151BE6E2CE00D70563 /* JFWDropPathTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFWDropPathTextField.m; sourceTree = "<group>"; };
 		CBE905A91BE6B42D00A1B4F6 /* DVTInvalidation-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTInvalidation-Protocol.h"; sourceTree = "<group>"; };
 		CBE905AA1BE6B42D00A1B4F6 /* DVTPreferenceSet-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTPreferenceSet-Protocol.h"; sourceTree = "<group>"; };
 		CBE905AB1BE6B42D00A1B4F6 /* DVTFontAndColorTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFontAndColorTheme.h; sourceTree = "<group>"; };
@@ -79,6 +82,8 @@
 				CB7D6AC01BE68FD200D727C9 /* JFWSymbolicateViewController.h */,
 				CB7D6AC11BE68FD200D727C9 /* JFWSymbolicateViewController.m */,
 				CB7D6ABE1BE68F6500D727C9 /* JFWSymbolicate.storyboard */,
+				CBB0C5141BE6E2CE00D70563 /* JFWDropPathTextField.h */,
+				CBB0C5151BE6E2CE00D70563 /* JFWDropPathTextField.m */,
 				CB7D6AAE1BE68D3500D727C9 /* NSObject_Extension.h */,
 				CB7D6AAF1BE68D3500D727C9 /* NSObject_Extension.m */,
 				CBE905AB1BE6B42D00A1B4F6 /* DVTFontAndColorTheme.h */,
@@ -167,6 +172,7 @@
 				CB7D6AAD1BE68D3500D727C9 /* JFWCrashSymbal.m in Sources */,
 				CB7D6AC21BE68FD200D727C9 /* JFWSymbolicateViewController.m in Sources */,
 				CB7D6AB01BE68D3500D727C9 /* NSObject_Extension.m in Sources */,
+				CBB0C5161BE6E2CE00D70563 /* JFWDropPathTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

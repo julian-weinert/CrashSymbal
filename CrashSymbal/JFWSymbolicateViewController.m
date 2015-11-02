@@ -9,7 +9,9 @@
 #import "JFWSymbolicateViewController.h"
 #import "DVTFontAndColorTheme.h"
 
-@interface JFWSymbolicateViewController ()
+#import "JFWDropPathTextField.h"
+
+@interface JFWSymbolicateViewController () <JFWDropPathDelegate>
 
 @property (nonatomic, assign) IBOutlet NSTextField *pathTextField;
 @property (nonatomic, assign) IBOutlet NSTextView *outputView;
@@ -248,6 +250,16 @@
 	
 	[[self progressBar] setIndeterminate:NO];
 	[[self progressBar] setDoubleValue:100];
+}
+
+#pragma mark - JFWDropPathDelegate
+
+- (NSArray<NSString *> *)validFileTypesForDropPathTextField:(JFWDropPathTextField *)dropPathTextField {
+	return @[@"crash"];
+}
+
+- (void)dropPathTextField:(JFWDropPathTextField *)dropPathTextField didDropPath:(NSString *)path {
+	[self setSelectedPath:path];
 }
 
 @end
