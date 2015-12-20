@@ -3,7 +3,7 @@ An Xcode plugin for manually symbolicating crash logs
 
 ## Install
 
-1. Build the project to install the plugin. The plugin gets installed in `/Library/Application Support/Developer/Shared/Xcode/Plug-ins/LinkedLog.xcplugin`.
+1. Build the project to install the plugin. The plugin gets installed in `/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin`.
 2. Restart Xcode for the plugin to be activated.
 
 **Alternatively, install it using [Alcatraz plugin manager](https://github.com/supermarin/Alcatraz).**
