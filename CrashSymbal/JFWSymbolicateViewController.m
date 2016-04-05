@@ -179,6 +179,21 @@
 			NSString *developerDir = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"Contents/Developer"];
 			
 			NSTask *symbolicationTask = [[NSTask alloc] init];
+						NSString *symbolicatecrashPath = [[NSBundle bundleWithIdentifier:@"com.apple.dt.DVTFoundation"] pathForResource:@"symbolicatecrash" ofType:nil];
+
+			if (symbolicatecrashPath == nil) {
+				// Try an older style bundle identifier
+				symbolicatecrashPath = [[NSBundle bundleWithIdentifier:@"com.apple.DTDeviceKitBase"] pathForResource:@"symbolicatecrash" ofType:nil];
+			}
+
+			if (symbolicatecrashPath == nil) {
+				NSLog(@"CrashSymbal: cannot locate 'symbolicatecrash' in this version of Xcode");
+
+				return;
+			}
+
+			NSLog(@"CrashSymbal:symbolicatecrash: %@", symbolicatecrashPath);
+
 			[symbolicationTask setLaunchPath:[[NSBundle bundleWithIdentifier:@"com.apple.DTDeviceKitBase"] pathForResource:@"symbolicatecrash" ofType:nil]];
 			[symbolicationTask setEnvironment:@{@"DEVELOPER_DIR": developerDir}];
 			[symbolicationTask setArguments:@[@"-v", [self selectedPath]]];
