@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="g1V-2d-YfJ">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="g1V-2d-YfJ">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9059"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
     </dependencies>
     <scenes>
         <!--Window Controller-->
@@ -33,7 +33,6 @@
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tuh-oK-oio">
                                 <rect key="frame" x="525" y="391" width="115" height="32"/>
-                                <animations/>
                                 <buttonCell key="cell" type="push" title="Select File..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9vG-pG-oKh">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -44,7 +43,6 @@
                             </button>
                             <progressIndicator wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="q45-XT-hYg">
                                 <rect key="frame" x="20" y="370" width="740" height="20"/>
-                                <animations/>
                             </progressIndicator>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whX-jC-IXD">
                                 <rect key="frame" x="20" y="61" width="740" height="302"/>
@@ -55,7 +53,6 @@
                                         <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="8Wt-ap-yKK">
                                             <rect key="frame" x="0.0" y="0.0" width="738" height="300"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <animations/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <size key="minSize" width="738" height="300"/>
                                             <size key="maxSize" width="740" height="10000000"/>
@@ -64,23 +61,19 @@
                                             <size key="maxSize" width="740" height="10000000"/>
                                         </textView>
                                     </subviews>
-                                    <animations/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </clipView>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="cEt-r4-9Vv"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="mHr-ae-BuT"/>
                                 </constraints>
-                                <animations/>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="Lml-Ym-UJ1">
                                     <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="ZQI-Ma-PeS">
                                     <rect key="frame" x="723" y="1" width="16" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
                                 </scroller>
                             </scrollView>
                             <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="7uS-3O-pcB" customClass="JFWDropPathTextField">
@@ -88,7 +81,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="BPG-uS-UN7"/>
                                 </constraints>
-                                <animations/>
                                 <textFieldCell key="cell" lineBreakMode="truncatingMiddle" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Select crashlog" drawsBackground="YES" id="Hj7-id-f7V">
                                     <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -100,7 +92,6 @@
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wVQ-oY-liN">
                                 <rect key="frame" x="694" y="13" width="72" height="32"/>
-                                <animations/>
                                 <buttonCell key="cell" type="push" title="Done" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0Te-1R-xpx">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -114,7 +105,6 @@ Gw
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2yB-gH-y1W">
                                 <rect key="frame" x="613" y="13" width="81" height="32"/>
-                                <animations/>
                                 <buttonCell key="cell" type="push" title="Save..." bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PUE-WP-8KD">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -125,7 +115,6 @@ Gw
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wST-kB-bim">
                                 <rect key="frame" x="640" y="391" width="126" height="32"/>
-                                <animations/>
                                 <buttonCell key="cell" type="push" title="Symbolicate..." bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="22V-Gw-VyJ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -136,7 +125,6 @@ Gw
                             </button>
                             <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oya-BX-igs">
                                 <rect key="frame" x="14" y="13" width="87" height="32"/>
-                                <animations/>
                                 <buttonCell key="cell" type="push" title="Pop out" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uae-JT-XFz">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -168,7 +156,6 @@ Gw
                             <constraint firstItem="wVQ-oY-liN" firstAttribute="leading" secondItem="2yB-gH-y1W" secondAttribute="trailing" constant="12" id="ssV-CR-2ny"/>
                             <constraint firstItem="wST-kB-bim" firstAttribute="top" secondItem="Lg7-Cw-YNi" secondAttribute="top" constant="20" id="ygK-Sk-sSr"/>
                         </constraints>
-                        <animations/>
                     </view>
                     <connections>
                         <outlet property="closeWindowButton" destination="wVQ-oY-liN" id="ZnV-Je-tDh"/>
@@ -193,7 +180,6 @@ Gw
                     <subviews>
                         <button translatesAutoresizingMaskIntoConstraints="NO" id="NWf-HX-utz">
                             <rect key="frame" x="18" y="18" width="129" height="18"/>
-                            <animations/>
                             <buttonCell key="cell" type="check" title="Show hidden files" bezelStyle="regularSquare" imagePosition="left" inset="2" id="0jw-SJ-9N6">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -208,7 +194,6 @@ Gw
                         <constraint firstItem="NWf-HX-utz" firstAttribute="leading" secondItem="MUh-5v-e7W" secondAttribute="leading" constant="20" id="2wg-7Z-Gpt"/>
                         <constraint firstAttribute="bottom" secondItem="NWf-HX-utz" secondAttribute="bottom" constant="20" id="Mqn-Jk-mtQ"/>
                     </constraints>
-                    <animations/>
                 </customView>
                 <customView id="p3J-2o-j5R">
                     <rect key="frame" x="0.0" y="0.0" width="165" height="74"/>
@@ -216,7 +201,6 @@ Gw
                     <subviews>
                         <button translatesAutoresizingMaskIntoConstraints="NO" id="Utp-ii-fXT">
                             <rect key="frame" x="18" y="38" width="129" height="18"/>
-                            <animations/>
                             <buttonCell key="cell" type="check" title="Show hidden files" bezelStyle="regularSquare" imagePosition="left" inset="2" id="nmS-sK-eUG">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -227,7 +211,6 @@ Gw
                         </button>
                         <button translatesAutoresizingMaskIntoConstraints="NO" id="i1b-AI-i28">
                             <rect key="frame" x="18" y="18" width="116" height="18"/>
-                            <animations/>
                             <buttonCell key="cell" type="check" title="Reveal in finder" bezelStyle="regularSquare" imagePosition="left" inset="2" id="vcS-Ie-p4a">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -244,7 +227,6 @@ Gw
                         <constraint firstItem="Utp-ii-fXT" firstAttribute="leading" secondItem="p3J-2o-j5R" secondAttribute="leading" constant="20" id="bZA-pf-Ibn"/>
                         <constraint firstItem="Utp-ii-fXT" firstAttribute="top" secondItem="p3J-2o-j5R" secondAttribute="top" constant="20" id="gdh-Q1-HHi"/>
                     </constraints>
-                    <animations/>
                 </customView>
             </objects>
             <point key="canvasLocation" x="482" y="1022.5"/>
