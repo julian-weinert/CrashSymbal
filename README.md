@@ -22,7 +22,8 @@ It will open a dialog that allows you to select or drop a crashlog and smbolicat
 
 ## Bugs and limitations
 
-...
+- Xcode needs to bundle the `symbolicatecrash` binary.
+  - Now supporting newer Xcode versions, where `symbolicatecrash` is known to not be included.
 
 
 ## Contribution
