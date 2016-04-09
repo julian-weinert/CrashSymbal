@@ -40,8 +40,12 @@
 
 @implementation JFWSymbolicateViewController
 
+NSString * symbPathForIdentifier(NSString *identifier) {
+	return [[NSBundle bundleWithIdentifier:identifier] pathForResource:@"symbolicatecrash" ofType:nil];
+}
+
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	[super viewDidLoad];
 	
 	Class DVTFontAndColorThemeClass = NSClassFromString(@"DVTFontAndColorTheme");
 	DVTFontAndColorTheme *currentTheme = [DVTFontAndColorThemeClass currentTheme];
@@ -176,27 +180,19 @@
 				}
 			}];
 			
+			NSString *symbolicatecrashPath = symbPathForIdentifier(@"com.apple.dt.DVTFoundation") ?: symbPathForIdentifier(@"com.apple.DTDeviceKitBase");
+			
+			if (symbolicatecrashPath == nil) {
+				return;
+			}
+			
 			NSString *developerDir = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"Contents/Developer"];
 			
 			NSTask *symbolicationTask = [[NSTask alloc] init];
-						NSString *symbolicatecrashPath = [[NSBundle bundleWithIdentifier:@"com.apple.dt.DVTFoundation"] pathForResource:@"symbolicatecrash" ofType:nil];
-
-			if (symbolicatecrashPath == nil) {
-				// Try an older style bundle identifier
-				symbolicatecrashPath = [[NSBundle bundleWithIdentifier:@"com.apple.DTDeviceKitBase"] pathForResource:@"symbolicatecrash" ofType:nil];
-			}
-
-			if (symbolicatecrashPath == nil) {
-				NSLog(@"CrashSymbal: cannot locate 'symbolicatecrash' in this version of Xcode");
-
-				return;
-			}
-
-			NSLog(@"CrashSymbal:symbolicatecrash: %@", symbolicatecrashPath);
-
-			[symbolicationTask setLaunchPath:[[NSBundle bundleWithIdentifier:@"com.apple.DTDeviceKitBase"] pathForResource:@"symbolicatecrash" ofType:nil]];
+			
 			[symbolicationTask setEnvironment:@{@"DEVELOPER_DIR": developerDir}];
 			[symbolicationTask setArguments:@[@"-v", [self selectedPath]]];
+			[symbolicationTask setLaunchPath:symbolicatecrashPath];
 			[symbolicationTask setStandardOutput:stdOutPipe];
 			[symbolicationTask setStandardError:stdErrPipe];
 			[symbolicationTask launch];

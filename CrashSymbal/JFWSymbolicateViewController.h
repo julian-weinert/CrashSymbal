@@ -12,4 +12,6 @@
 
 @property (nonatomic, assign) NSWindowController *windowController;
 
+NSString * symbPathForIdentifier(NSString *identifier);
+
 @end

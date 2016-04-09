@@ -35,13 +35,19 @@
     return self;
 }
 
-- (void)applicationDidFinishLaunching:(NSNotification*)noti {
+- (void)applicationDidFinishLaunching:(NSNotification *)noti {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
 	
     NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Debug"];
 	
     if (menuItem) {
-		[self setSymbolicationMenuItem:[[NSMenuItem alloc] initWithTitle:@"Symbolicate Crashlog..." action:@selector(openSymbolicationPanel:) keyEquivalent:@""]];
+		NSString *itemTitle = @"Symbolicate Crashlog...";
+		
+		if (!(symbPathForIdentifier(@"com.apple.dt.DVTFoundation") ?: symbPathForIdentifier(@"com.apple.DTDeviceKitBase"))) {
+			itemTitle = [itemTitle stringByAppendingString:@"  (incompatible)"];
+		}
+		
+		[self setSymbolicationMenuItem:[[NSMenuItem alloc] initWithTitle:itemTitle action:@selector(openSymbolicationPanel:) keyEquivalent:@""]];
 		[[self symbolicationMenuItem] setTarget:self];
 		
 		[[menuItem submenu] addItem:[NSMenuItem separatorItem]];
@@ -50,6 +56,17 @@
 }
 
 - (void)openSymbolicationPanel:(id)sender {
+	if (!(symbPathForIdentifier(@"com.apple.dt.DVTFoundation") ?: symbPathForIdentifier(@"com.apple.DTDeviceKitBase"))) {
+		[NSApp presentError:[[NSError alloc] initWithDomain:[[NSBundle mainBundle] bundleIdentifier]
+													   code:404
+												   userInfo:@{
+														   NSLocalizedDescriptionKey: @"Xcode incompatible!",
+														   NSLocalizedRecoverySuggestionErrorKey: @"Could not find `symbolicatecrash`.\nPlease run a different version of Xcode or discuss the absence of symbolicatecrash with the community."
+														   }]];
+		
+		return;
+	}
+	
 	[self setSymbolicateWindowController:[[NSStoryboard storyboardWithName:@"JFWSymbolicate" bundle:[self bundle]] instantiateInitialController]];
 	[(JFWSymbolicateViewController *)[[self symbolicateWindowController] contentViewController] setWindowController:[self symbolicateWindowController]];
 	
