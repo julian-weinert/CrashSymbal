@@ -25,4 +25,9 @@ It will open a dialog that allows you to select or drop a crashlog and smbolicat
 
 ### Pull requests
 
-If you want to contribute, send me a pull request.
+If you want to contribute, feel free to send me pull requests! But lease follow these simple rules:
+
+- Double-check your code before sending a pull request
+- Pull requests should always be made agains `develop`
+- Always use tab-indentation!
+- Indent properly!
