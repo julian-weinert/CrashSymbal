@@ -28,7 +28,7 @@ It will open a dialog that allows you to select or drop a crashlog and smbolicat
 
 ## Contribution
 
-If you want to contribute, feel free to send me pull requests! But lease follow these simple rules:
+If you want to contribute, feel free to send me pull requests! But please follow these simple rules:
 
 - Double-check your code before sending a pull request
 - Pull requests should always be made agains `develop`
